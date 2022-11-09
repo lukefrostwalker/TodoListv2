@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;}
+body {
+    background: rgb(44,62,80);
+    background: linear-gradient(300deg, rgba(44,62,80,1) 0%, rgba(189,195,199,1) 100%);
+}
+.todo-container {
+    box-shadow:-20px -20px 0px 0px #3741515e;
+    background-color: #1F2937;
+    width: 500px;
+}
+.todo-container h1 {
+    color: white;
+}
+.todo-container p {
+    color: #0EA5E9;
+}
+.todo-container #ct {
+    color: rgba(255, 255, 255, 0.616);
+}
+.item-container {
+    position: relative;
+    background:rgba(163, 163, 163, 0.1);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 15px;
+}
+input:checked + .item-box {
+    text-decoration: line-through;
+    color: gray;
+    font-weight: lighter;
+}
+.item-box {
+    padding: 15px;
+    background: transparent;
+    border: none;
+    color: #0EA5E9;
+    font-weight: bold;
+    flex-grow: 1;
+}
+.item-box:focus {
+    outline: none;
+}
+.empty-soul {
+    opacity: 0.8;
+}
+.action-container {
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.edit-btn {
+    order: 2;
+}
+.save-btn {
+    order: 1;
+}
+.del-btn {
+    order: 3;
+}
+.edit-btn, .save-btn, .del-btn {
+    border:none;
+	background:none;
+	-webkit-appearance:none;
+    appearance: none;
+	cursor:pointer;
+	color:#FFF;
+    margin-left: 5px;
+}
+.edit-btn:hover, .save-btn:hover, .del-btn:hover {
+    color: black;
+}
+form label {
+    color: white;
+}
+#newItem {
+    background-color: #374151;
+    color: white;
+}
+.input-group button{
+    background-color: #374151 !important;
+}
+
+/* button span {
+    color:#0EA5E9; able
+    disable #0369A1
+} */
