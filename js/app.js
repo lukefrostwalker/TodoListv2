@@ -84,7 +84,6 @@ function addItem(){
 
     function editItem() {
         itemBox.setAttribute("style", "color: white");
-
         itemBox.removeAttribute("disabled", "");
 
         editBtn.setAttribute("disabled", "");
@@ -110,7 +109,7 @@ function addItem(){
                 itemBox.defaultValue = editedItemBox;
 
                 itemBox.setAttribute("disabled", "");
-                itemBox.removeAttribute("style", "color: white");
+                itemBox.setAttribute("style", "color: #0EA5E9");
 
                 saveBtn.style.display = "none";
 
@@ -123,14 +122,13 @@ function addItem(){
                 editBtn.removeAttribute("disabled", "");
                 editBtn.removeAttribute("style", "");
 
+                itemBox.value = itemBox.defaultValue;
                 itemBox.setAttribute("disabled", "");
-                itemBox.removeAttribute("style", "color: #0EA5E9");
+                itemBox.setAttribute("style", "color: #0EA5E9");
 
                 saveBtn.style.display = "none";
 
                 checkBox.style.display = "block";
-
-                itemBox.value = itemBox.defaultValue;
             }
             alert(saveText);
         }
