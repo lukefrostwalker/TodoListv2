@@ -109,7 +109,7 @@ function addItem(){
                 itemBox.defaultValue = editedItemBox;
 
                 itemBox.setAttribute("disabled", "");
-                itemBox.setAttribute("style", "color: #0EA5E9");
+                itemBox.removeAttribute("style", "");
 
                 saveBtn.style.display = "none";
 
@@ -124,7 +124,8 @@ function addItem(){
 
                 itemBox.value = itemBox.defaultValue;
                 itemBox.setAttribute("disabled", "");
-                itemBox.setAttribute("style", "color: #0EA5E9");
+                // itemBox.setAttribute("style", "color: #0EA5E9");
+                itemBox.style.color = "#0EA5E9";
 
                 saveBtn.style.display = "none";
 
