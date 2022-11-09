@@ -33,6 +33,7 @@ function addItem(){
     itemBox.classList = "item-box";
     itemBox.setAttribute("disabled", ""); 
     itemBox.value = newItemInput;
+    itemBox.defaultValue = newItemInput;
 
     let actionContainer = document.createElement("div");
     actionContainer.classList = "action-container";
@@ -83,7 +84,7 @@ function addItem(){
     }
 
     function editItem() {
-        // itemBox.setAttribute("style", "color: white");
+        itemBox.setAttribute("style", "color: white");
         itemBox.removeAttribute("disabled", "");
 
         editBtn.setAttribute("disabled", "");
@@ -109,7 +110,7 @@ function addItem(){
                 itemBox.defaultValue = editedItemBox;
 
                 itemBox.setAttribute("disabled", "");
-                // itemBox.removeAttribute("style", "");
+                itemBox.removeAttribute("style", "");
 
                 saveBtn.style.display = "none";
 
@@ -124,12 +125,13 @@ function addItem(){
 
                 itemBox.value = itemBox.defaultValue;
                 itemBox.setAttribute("disabled", "");
-                // itemBox.setAttribute("style", "color: #0EA5E9");
+                itemBox.setAttribute("style", "color: #0EA5E9");
                 // itemBox.style.color = "#0EA5E9";
 
                 saveBtn.style.display = "none";
 
                 checkBox.style.display = "block";
+                console.log(itemBox.value)
             }
             alert(saveText);
         }
